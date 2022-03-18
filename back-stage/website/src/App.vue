@@ -1,6 +1,8 @@
 <template lang="pug">
 component(:is="layout")
-  <router-view />
+  <router-view v-slot="{Component}" />
+    transition(name="fade")
+      component(:is="Component")
 </template>
 
 <script lang="ts">
@@ -26,28 +28,4 @@ export default defineComponent({
   width: 100vw;
   height: 100vh;
 }
-// body {
-//   background-color: red;
-// }
-
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-// }
-
-// nav {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>
