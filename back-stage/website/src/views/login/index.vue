@@ -89,4 +89,5 @@ export default defineComponent({
   background-color: #f6f8fa
   border: 1px solid hsla(210,18%,87%,1)
   padding: 20px
+  border-radius: 5px
 </style>
