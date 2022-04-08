@@ -1,8 +1,9 @@
 <template lang="pug">
 component(:is="layout")
-  <router-view v-slot="{Component}" />
-    transition(name="fade")
-      component(:is="Component")
+  //- router-view(v-slot="{Component}")
+  //-   transition
+  //-     component(:is="Component")
+  router-view
 </template>
 
 <script lang="ts">
@@ -23,6 +24,7 @@ export default defineComponent({
 <style lang="scss">
 @import '@/assets/styles/transition';
 @import '@/assets/styles/_reboot';
+@import '@/assets/styles/ant-design';
 
 #app {
   width: 100vw;
