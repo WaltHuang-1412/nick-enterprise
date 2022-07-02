@@ -21,7 +21,7 @@
 <script lang="ts">
 import { defineComponent, reactive, computed } from 'vue'
 import { UserOutlined, LockOutlined } from '@ant-design/icons-vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 
 interface FormState {
   username: string
